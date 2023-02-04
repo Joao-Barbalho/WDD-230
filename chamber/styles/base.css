@@ -6,12 +6,58 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* BANNER */
+.banner {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background: #fca311;
+}
+
+.banner-content {
+    max-width: 650px;
+    padding: 4px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.banner-text {
+    flex-grow: 1;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.banner-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.banner-button img {
+    width: 30px;
+}
+
+.banner-text,
+.banner-button > span {
+    color: black; 
+}
+
+.banner-button > span:hover {
+    color: #14213d;
+}
+
+/* HEADER */
 header {
     background-color: #14213d;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
     justify-content: space-evenly;
     margin: auto;
+}
+
+header img {
+    filter: invert(1);
 }
 
 
@@ -19,6 +65,28 @@ header {
     width: 300px;
     padding: 20px;
 }
+
+nav {
+    margin: auto;
+    grid-column: 1/3;
+}
+
+nav li {
+    display: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #fca311;
+}
+
 #hamburger {
     color: #e5e5e5;
     text-decoration: none;
@@ -27,6 +95,15 @@ header {
     margin: auto;
     font-size: 3em;
 }
+
+.responsive  li{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 40px;
+}
+
 .socials img {
     width: 24px;
 }
@@ -37,6 +114,7 @@ header {
     grid-column: 1/3;
     margin: auto;
 }
+
 .date {
     color: #e5e5e5;
     font-style: italic;
@@ -46,6 +124,8 @@ header {
     font-family: 'EB Garamond', serif;
     font-weight: 500;
 }
+
+/* MAIN */
 main {
     display: flex;
     flex-direction: column;
@@ -55,6 +135,9 @@ main {
 main h1 {
     display: none;
 }
+
+
+
 main section {
     /* height: 400px; */
     object-fit: cover;
@@ -63,6 +146,7 @@ main section {
 main section div {
     height: 200px;
 }
+
 main section,  main section div {
     background-color: #e5e5e5;
     margin: 10px;
@@ -102,13 +186,17 @@ main section,  main section div {
 }
 
 
+#spot1, #spot2, #spot3 {
+    width: 95%;
+    height: 400px;
+    /* margin: -20px; */
+}
+
 #news, #event, #join, #weather {
     padding: 10px;
 }
 
-#news a:hover {
-    color: #14213d;
-}
+
 
 button:hover {
     background-color: #fca311;
@@ -129,6 +217,7 @@ button:hover {
     font-size: 1.5em;
     font-weight: 700;
 }
+
 footer {
     background-color: #14213d;
     text-align: center;
@@ -146,5 +235,30 @@ footer img {
 #copyright {
     /* line-height: .5em; */
     font-size: .7em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fca311;
+}
+
+.discover {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+}
+
+.discover div {
+    padding: 10px;
+}
+
+.join {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
