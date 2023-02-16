@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/weather.js"></script>
+
    
     <title>Seattle Chamber of Commerce</title>
 </head>
@@ -59,8 +61,18 @@
         <section id="event">
            
         </section>
-        <section id="weather">
-            
+            <section id="weather">
+                <h2>Weather</h2>
+                <div id="weather_top">
+                    <h2><span id="temp"></span>&#8457;</h2>
+                    <figure><img src="#" alt="Placeholder" id="weathericon" />
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <hr>
+                <p>Wind: <span id="wind"></span> MPH</p>
+                <p>Wind Chill: <span id="windchill"></span><span id="windDegree"></span></p>
+            </section>
         </section>
         <section id="news">
             
