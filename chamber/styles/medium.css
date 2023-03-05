@@ -78,7 +78,20 @@
         /* height: 90%; */
     }
 
-   
+    #spot1 img, #spot2 img, #spot3 img {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        bottom: 125px;
+        /* position: relative; */
+    }
+
+    #spot1 h3, #spot2 h3, #spot3 h3 {
+        position: relative;
+        top: 75px;
+        font-size: 2em;
+    }
+
     /* FOOTER */
 
     #about {

@@ -136,7 +136,9 @@ main h1 {
     display: none;
 }
 
-
+#spotlights h2 {
+    display: none;
+}
 
 main section {
     /* height: 400px; */
@@ -185,6 +187,30 @@ main section,  main section div {
     height: 100%;
 }
 
+#spot1 img, #spot2 img, #spot3 img {
+    /* filter: brightness(.5); */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* position: relative; */
+}
+
+#spot1 h3, #spot2 h3, #spot3 h3 {
+    background-color: #14213d;
+    color: #e5e5e5;
+    z-index: 3;
+    position: relative;
+    top: 200px;
+    font-size: 2em;
+}
+
+#spotlights a {
+    text-decoration: none;
+}
+
+#spotlights h3:hover {
+    color: #fca311;
+}
 
 #spot1, #spot2, #spot3 {
     width: 95%;
@@ -196,7 +222,9 @@ main section,  main section div {
     padding: 10px;
 }
 
-
+#news a:hover {
+    color: #14213d;
+}
 
 button:hover {
     background-color: #fca311;
@@ -217,6 +245,55 @@ button:hover {
     font-size: 1.5em;
     font-weight: 700;
 }
+
+footer {
+    background-color: #14213d;
+    text-align: center;
+    color: #e5e5e5;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer img {
+    filter: invert(1);
+    width: 25%;
+}
+
+#copyright {
+    /* line-height: .5em; */
+    font-size: .7em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fca311;
+}
+
+.discover {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+}
+
+.discover div {
+    padding: 10px;
+}
+
+.join {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.membershipLevels {
+    margin: 10px;
+}
+
 .form h1 {
     display: block;
     text-align: center;
@@ -285,20 +362,6 @@ label, textarea, select{
     background-color: #fca311;
 }
 
-footer {
-    background-color: #14213d;
-    text-align: center;
-    color: #e5e5e5;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-footer img {
-    filter: invert(1);
-    width: 25%;
-}
-
 .thanks {
     display: flex;
     flex-direction: column;
@@ -313,35 +376,85 @@ footer img {
     display: block;
 }
 
-
-#copyright {
-    /* line-height: .5em; */
-    font-size: .7em;
+.directory #content {
+    width: 100%;
+    margin: 0 auto;
 }
 
-footer a {
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.cards section {
+    border: 2px solid #14213d;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+}
+
+.directory h2, h1 {
+    color: #14213d;
+    text-align: center;
+}
+.directory .cards img {
+    width: 300px;
+    height: 180px;
+}
+
+.directory a {
     text-decoration: none;
-    color: #fca311;
+    color: #14213d;
 }
 
-.discover {
+.directory p:first-of-type {
+    font-style: italic;
+    font-size: 0.75em;
+}
+
+.directory .icons{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    gap: 10px;
+    margin: 10px;
 }
 
-.discover div {
+.icons button {
+    background-color: white;
+    border: none;   
+}
+
+.icons button:hover {
+    background-color: #e5e5e5;
+    cursor: pointer;
+}
+
+.icons img {
+    width: 50px;
+}
+
+.directory table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+    overflow: hidden;
+}
+
+.directory td {
+
     padding: 10px;
 }
 
-.join {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+tr:nth-child(odd) {
+    background-color: #e5e5e5;
+}
+
+tr td {
+    display: block;
 }
 
 #weather_top {
@@ -352,4 +465,26 @@ footer a {
 #weather_top h2{
     text-align: center;
     font-size: 3em;
+}
+
+.board {
+    padding: 10px;
+}
+
+.board img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.board {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }

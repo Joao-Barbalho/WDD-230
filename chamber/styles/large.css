@@ -106,7 +106,10 @@
         line-height: 1.5em;
     }
 
-    
+    #news a {
+        text-decoration: none;
+        color: #3a3a3a;
+    }
 
     #spotlights {
         grid-column: 3;
@@ -117,8 +120,30 @@
         height: auto
     }
 
-    
+    #spot1 img, #spot2 img, #spot3 img {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        bottom: 150px;
+    }
 
+    #spot1 h3, #spot2 h3, #spot3 h3 {
+        z-index: 3;
+        position: relative;
+        top: 125px;
+        font-size: 2em;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    #spotlights a {
+        text-decoration: none;
+    }
+
+    #spotlights h3:hover {
+        color: #fca311;
+    }
 
     #spot1, #spot2, #spot3 {
         width: 95%;
@@ -172,11 +197,21 @@
         padding: 50px;
     }
 
-   
+    tr td {
+        display: table-cell;
+    }
+
     .contact {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 20px;
+    }
+
+    .board {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
     
