@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.webp">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian&family=Space+Mono&display=swap" rel="stylesheet">
+    <!-- style sheets -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header class="header-1">
+        <!-- logo & title -->
+        <a href="HOME.html"><img class="top-logo" src="images/logo.webp" alt="logo pic"></a>
+        <div class="title-1">
+            <h1>Bountiful foods</h1>
+            <h2>Home Page</h2>
+        </div>
+        <!-- social media icons -->
+        <div class="top-icons1">
+            <a href="https://www.instagram.com/"><img src="images/instagram.webp" alt="instagram"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="facebook"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.webp" alt="linkedin"></a>
+        </div>
+        <!-- <div> Icons made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div> -->
+        <!-- nav bar -->
+        <nav>
+            <ul class="nav-bar">
+                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <li><a href="HOME.html">Home Page</a></li>
+                <li><a href="FRESH.html">Drinks</a></li>
+                <li><a href="ABOUT-US.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/fruit1.webp" style="width:100%" alt="fruit 1 pic">
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/fruit2.webp" style="width:100%" alt="fruit 2 pic">
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/fruit3.webp" style="width:100%" alt="fruit 3 pic">
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <main>
+        <a href="FRESH.html"><h3 class="try-now">TRY NOW!</h3></a>
+        <!-- top image with lazy load -->
+        <div class="section1">
+            <picture >
+                <source srcset="images/cherry300.webp" media="(min-width: 300px) and (max-width: 380px)" >
+                <source srcset="images/cherry400.webp" media="(min-width: 400px) and (max-width: 480px)" >
+                <img class="cherry" src="images/cherry500.webp" alt="cherry pic">
+            </picture>
+            <!-- Photo by Pixabay: https://www.pexels.com/photo/orange-fruit-161559/ -->
+            <!-- top text next to the img -->
+            <p class="top-text">
+                <!-- https://en.wikipedia.org/wiki/Coast -->
+                The coast, also known as the coastline or seashore, 
+                is defined as the area where land meets the ocean,
+                 or as a line that forms the boundary between the land 
+                 and the coastline.Shores are influenced by the topography 
+                 of the surrounding landscape, as well as by water induced erosion, 
+                 such as waves. The geological composition of rock and soil dictates 
+                 the type of shore which is created. The Earth has around 
+                 620,000 kilometres (390,000 mi) of coastline. Coasts are 
+                 important zones in natural ecosystems, often home to a wide r
+                 ange of biodiversity. On land, they harbor important 
+                 ecosystems such as freshwater or estuarine wetlands, which 
+                 are important for bird populations and other terrestrial 
+                 animals. In wave-protected areas they harbor saltmarshes, 
+                 mangroves or seagrasses, all of which can provide nursery 
+                 habitat for finfish, shellfish, and other aquatic species.
+                Rocky shores are usually found along exposed coasts 
+                 and provide habitat for a wide range of sessile animals (e.g. 
+                 mussels, starfish, barnacles) and various kinds of seaweeds. 
+                 In physical oceanography, a shore is the wider fringe that is 
+                 geologically modified by the action of the body of water past 
+                 and present, while the beach is at the edge of the shore, 
+                 representing the intertidal zone where there is one.[5] Along 
+                 tropical coasts with clear, nutrient-poor water, coral reefs 
+                 can often be found between depths of 1–50 meters (3.3–164.0 feet).
+            </p>
+        </div>
+        <!-- drinks card -->
+        <h2 class="num-of-speciality-drinks"></h2>
+        <!-- Weather title -->
+        <!-- contains current weather -->
+        <h1 class="weather-text">Current Carlsbad Weather</h1>
+        <div class="weather-cards"></div>
+        <!-- contains 3 day forecast cards -->
+        <h1 class="forecast-text">Carlsbad 3 day Weather Forecast</h1>
+        <div class="weather-forecast"></div>
+        <!-- bottom image with lazy load -->
+        <div class="section2">
+            <picture>
+                <source srcset="images/orange300.webp" media="(min-width: 300px) and (max-width: 380px)" >
+                <source srcset="images/orange400.webp" media="(min-width: 400px) and (max-width: 480px)" >
+                <img class="orange" src="images/orange500.webp" alt="orange img">
+            </picture>
+            <!-- Photo by Lisa Fotios: https://www.pexels.com/photo/red-cherry-fruit-109274/ -->
+            <a href="FRESH.html"><h3 class="juice-up">JUICE UP!</h3></a>
+            <!-- bottom text next to the img -->
+            <p class="bottom-text">
+                <!-- https://www.sandiego.org/explore.aspx -->
+                With near perfect weather year-round, 70 miles of spectacular coastline, world-class attractions and a thriving urban core, complete with a sophisticated art, dining and nightlife scene, San Diego has earned the name California’s beach city.  
+
+                Explore San Diego’s diverse coastal, urban and inland neighborhoods, each with its own flavor. Don’t miss sampling the areas signature Cali Baja cuisine or tasting one of the hundreds of craft beers and wines bottled in the region.  
+
+                After a day at the beach or other outdoor adventure, head to the party downtown at one of the sizzling nightclubs or rooftop bars. If art and culture is your passion, you’ll find an exciting hub of creativity in San Diego. Often referred to as the “Smithsonian of the West,” Balboa Park features 17 museums, numerous galleries and performing arts venues as well as the San Diego Zoo.   
+
+                It’s hard to find a better destination for families. Whether you love engaging with animals or thrill rides, building sandcastles or beach bonfires, there’s plenty to entertain the entire family from sun up to sun down.  
+
+                Happiness is calling from San Diego, it’s time to answer the call and start planning your vacation now.  
+            </p>
+        </div>
+    </main>
+    <footer>
+        <!-- logo -->
+        <a href="HOME.html"><img class="bottom-logo" src="images/logo.webp" alt="logo pic"></a>
+        <!-- social media icons -->
+        <div class="bottom-icons1">
+            <a href="https://www.instagram.com/"><img src="images/instagram.webp" alt="instagram"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="facebook"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.webp" alt="linkedin"></a>
+        </div>
+        <h1>Bountiful foods</h1>
+        <!-- last modified -->
+        <p class="last-modified"><span id="lastupdate"></span></p>
+        <p class="sub-footer">João Barbalho| WDD 230 final project</p>
+    </footer>
+    <script src="scripts/ham-menu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/slides.js"></script>
+    <script src="scripts/last-modified.js"></script>
+</body>
+</html>

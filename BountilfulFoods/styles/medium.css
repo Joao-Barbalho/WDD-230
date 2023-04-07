@@ -1,0 +1,51 @@
+@media only screen and (min-width: 37.5em) {
+    :root {
+        --georgia: 'Noto Serif Georgian', serif;
+        --space: 'Space Mono', monospace;
+    
+        --color1: #528676;
+        --color2: #46494C;
+        --color3: #E5E4E3;
+        --color4: #F6AE2D;
+        --color5: #34a0a4;
+        --body: #000;
+        --body: #fff;
+    }
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        background-color: var(--color1);
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px 10%;
+        height: 70%;
+        width: 100%;
+    }
+    .nav-bar :hover{
+        background-color: var(--color5);
+    }
+    nav ul li a {
+        color: #fff;
+        font-size: 22px;
+        list-style: none;
+        text-decoration: none;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    nav ul #hamburgerBtn {
+        display: none;
+    }
+    nav ul li 
+    {
+        display: block;
+    }
+    img.top-logo {
+        width: 80%;
+    }
+    img.bottom-logo {
+        margin: 0 auto;
+        width: 15%;
+        padding-top: 8%;
+        margin-left: 42%;
+    }
+}
