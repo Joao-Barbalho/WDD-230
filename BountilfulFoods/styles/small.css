@@ -1,3 +1,6 @@
+
+@media screen and (max-width: 37.75em) {
+
 /* the code below are root fonts and styles */
 :root {
   --georgia: 'Noto Serif Georgian', serif;
@@ -424,4 +427,4 @@ margin: 0 auto;
 grid-column: 2/3;
 }
 /* ---------------------------------------------- */
-
+}

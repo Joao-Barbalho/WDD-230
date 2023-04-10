@@ -1,4 +1,4 @@
-@media only screen and (min-width: 65em){
+@media only screen and (min-width: 64rem){
     :root {
         --georgia: 'Noto Serif Georgian', serif;
         --space: 'Space Mono', monospace;
